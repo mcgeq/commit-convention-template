@@ -1,0 +1,27 @@
+{
+  "name": "gitcommit",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git add . && cz"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
+    "commitizen": "^4.3.1",
+    "commitlint": "^19.8.1",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cz-customizable": "^7.4.0",
+    "npm-check-updates": "^18.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
+    }
+  }
+}
